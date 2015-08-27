@@ -19,8 +19,6 @@ FFT         fft;
 
 int toggle = 0;
 
-Gif myAnimation; 
-/* @pjs preload="feeling_myself.gif"; */
 PImage moon; 
 /* @pjs preload="moon.png"; */
 
@@ -87,8 +85,6 @@ void setup()
  bl = new BeatListener(beat, lineIn); 
  textFont(createFont("Helvetica", 70)); 
  textAlign(CENTER);
-// myAnimation = new Gif(this, "feeling_myself.gif");
-//  myAnimation.play(); 
  randomX = 200;
 }
 
@@ -207,13 +203,6 @@ void draw()
  snareSize = constrain(snareSize * 0.99, 50, 70);
 }
 
-//void mouseClicked(){
-//  if(toggle == 0){
-//    toggle = 1;
-//  } else {
-//    toggle = 0;
-//  }
-//}
 
 void mousePressed(){
   shotStart = new PVector(mouseX,mouseY);
@@ -244,7 +233,3 @@ void mouseReleased(){
   bball.velocity.y = shotStart.y - shotEnd.y;
   bball.velocity.mult(.2);
 }
-
-// boolean sketchFullScreen() {
-//  return true;
-//}

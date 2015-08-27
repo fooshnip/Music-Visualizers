@@ -12,8 +12,6 @@ int topScore;
 
 PImage sky;
 /* @pjs preload="water2.jpg"; */
-PImage water;
-/* @pjs preload="fishies.jpg"; */
 
 Ball bball;
 boolean isDragged;
@@ -57,11 +55,9 @@ void setup() {
 
 void draw() {
   background(100,200,235);
-  //image(sky,-200,-100);
   fft.forward(lineIn.mix);
   
   image(sky,-200,0);
-  //image(water,0,450);
   
   
   for(int i=0;i<waves.length;i++){
