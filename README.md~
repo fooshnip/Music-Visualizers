@@ -9,10 +9,6 @@ audio output to your audio input so that the program listens to the audio
 output.  On Mac, I utilized a tool, soundflowerbed.  The visualizer can now
 listen to any audio output source across your favorite music provider.
 
-** These projects contain some art assets and code that was the work and
-property of others.  Individual components were inspired from Daniel Shiffman's
-'Nature of Code' http://natureofcode.com/
-
 ### Screenshots
 Space Viz
 
